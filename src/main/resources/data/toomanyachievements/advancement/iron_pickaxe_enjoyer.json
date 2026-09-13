@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_pickaxe"
+    },
+    "title": "This sucks. Get diamonds.",
+    "description": "Pick up a iron pickaxe.",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "have_dirt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_pickaxe"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

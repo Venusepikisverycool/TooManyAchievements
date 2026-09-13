@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_log"
+    },
+    "title": "I already named him! Why! He was named log mclogface!",
+    "description": "Place any log type.",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "place_wood": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:logs"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

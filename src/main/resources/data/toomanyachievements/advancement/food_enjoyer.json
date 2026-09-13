@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:cooked_beef"
+    },
+    "title": "I was so hungry!",
+    "description": "Pick up food.",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "have_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#toomanyachievements:food"
+          }
+        ]
+      }
+    }
+  }
+}

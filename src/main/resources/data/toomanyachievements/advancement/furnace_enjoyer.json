@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:furnace"
+    },
+    "title": "Mmmm.. Smelting..",
+    "description": "Pick up a furnace.",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "have_dirt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:furnace"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

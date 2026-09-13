@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_planks"
+    },
+    "title": "I'll plank ya later!",
+    "description": "Place any plank type.",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "place_planks": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:planks"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

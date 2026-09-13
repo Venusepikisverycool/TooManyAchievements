@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:dirt"
+    },
+    "title": "What is that? Chocolate shavings?",
+    "description": "Pick up a dirt block.",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "have_dirt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:dirt"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

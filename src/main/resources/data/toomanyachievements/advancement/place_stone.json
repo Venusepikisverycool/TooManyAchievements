@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:stone"
+    },
+    "title": "Why is it cobbled?",
+    "description": "Place a stone block.",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "place_dirt": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:cobblestone"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

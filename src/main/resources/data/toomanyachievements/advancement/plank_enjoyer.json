@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:oak_planks"
+    },
+    "title": "Well hello there plank-iful.",
+    "description": "Pick up any plank type.",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "have_wood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:planks"
+          }
+        ]
+      }
+    }
+  }
+}

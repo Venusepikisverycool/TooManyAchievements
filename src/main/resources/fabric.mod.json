@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "toomanyachievements",
+  "version": "${version}",
+  "name": "TooManyAchievements",
+  "description": "Why are there so many achievements?",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "dev.toomanyachievements.tma.client.ToomanyachievementsDataGenerator"
+    ],
+    "client": [
+      "dev.toomanyachievements.tma.client.ToomanyachievementsClient"
+    ],
+    "main": [
+      "dev.toomanyachievements.tma.Toomanyachievements"
+    ]
+  },
+  "mixins": [
+    "toomanyachievements.mixins.json",
+    {
+      "config": "toomanyachievements.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
